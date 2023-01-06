@@ -14,6 +14,11 @@ func Input(s string, r *bufio.Reader) (string, error) {
 	return strings.TrimSpace(input), err
 }
 
+func AskName() {
+	name, _ := Input("What is your name?", bufio.NewReader(os.Stdin))
+	fmt.Println("Hi", name)
+}
+
 func main() {
-	Input("What is your name?", bufio.NewReader(os.Stdin))
+	AskName()
 }
