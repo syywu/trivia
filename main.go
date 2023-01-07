@@ -204,7 +204,7 @@ func Q9() {
 
 func Q10() {
 
-	q, _ := Input("When did the Cold War end?\na-1990\nb-1980\nc-1989\nd-1985\n", bufio.NewReader(os.Stdin))
+	q, _ := Input("When did the Cold War end?\na-1989\nb-1980\nc-1990\nd-1985\n", bufio.NewReader(os.Stdin))
 	switch q {
 	case "a":
 		fmt.Println("Correct")
