@@ -37,6 +37,7 @@ func Q1() {
 		fmt.Println("Wrong answer")
 	default:
 		fmt.Println("Invalid option")
+		time.Sleep(time.Second)
 		Q1()
 	}
 }
@@ -56,6 +57,7 @@ func Q2() {
 		fmt.Println("Wrong answer")
 	default:
 		fmt.Println("Invalid option")
+		time.Sleep(time.Second)
 		Q2()
 	}
 }
@@ -71,9 +73,34 @@ func Q3() {
 		fmt.Println("Wrong answer")
 	case "d":
 		fmt.Println("Correct")
+		time.Sleep(2 * time.Second)
+		Q4()
 	default:
 		fmt.Println("Invalid option")
+		time.Sleep(time.Second)
 		Q3()
+	}
+}
+
+// Trivia Question:
+// Answer: Knee cap
+func Q4() {
+	q, _ := Input("Which bone are babies born without?\na-patella\nb-fibula\nc-clavicles\nd-tibia\n", bufio.NewReader(os.Stdin))
+	switch q {
+	case "a":
+		fmt.Println("Correct")
+		time.Sleep(time.Second)
+		// Q5()
+	case "b":
+		fmt.Println("Wrong answer")
+	case "c":
+		fmt.Println("Wrong answer")
+	case "d":
+		fmt.Println("Wrong answer")
+	default:
+		fmt.Println("Invalid option")
+		time.Sleep(time.Second)
+		Q4()
 	}
 }
 
