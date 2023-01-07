@@ -110,7 +110,7 @@ func Q5() {
 	case "b":
 		fmt.Println("Correct")
 		time.Sleep(time.Second)
-		// Q6()
+		Q6()
 	case "c":
 		fmt.Println("Wrong answer")
 	case "d":
@@ -119,6 +119,29 @@ func Q5() {
 		fmt.Println("Invalid option")
 		time.Sleep(time.Second)
 		Q5()
+	}
+}
+
+// Trivia Question:
+// Answer: Classical
+
+func Q6() {
+	q, _ := Input("What type of music has been shown to help plants grow better and faster?\na-Hip Hop\nDeep House\nClassical\nd-Lo-Fi\n", bufio.NewReader(os.Stdin))
+	switch q {
+	case "a":
+		fmt.Println("Wrong answer")
+	case "b":
+		fmt.Println("Wrong answer")
+	case "c":
+		fmt.Println("Correct")
+		time.Sleep(time.Second)
+		// Q7()
+	case "d":
+		fmt.Println("Wrong answer")
+	default:
+		fmt.Println("Invalid option")
+		time.Sleep(time.Second)
+		Q6()
 	}
 }
 
