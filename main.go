@@ -132,13 +132,33 @@ func Q6() {
 	case "c":
 		fmt.Println("Correct")
 		time.Sleep(time.Second)
-		// Q7()
+		Q7()
 	case "d":
 		fmt.Println("Wrong answer")
 	default:
 		fmt.Println("Invalid option")
 		time.Sleep(time.Second)
 		Q6()
+	}
+}
+
+func Q7() {
+	q, _ := Input("What’s the hardest rock?\na-Granite\nb-Diamond\nc-Crystal\nd-Iron\n", bufio.NewReader(os.Stdin))
+	switch q {
+	case "a":
+		fmt.Println("Wrong answer")
+	case "b":
+		fmt.Println("Correct")
+		time.Sleep(time.Second)
+		// Q8()
+	case "c":
+		fmt.Println("Wrong answer")
+	case "d":
+		fmt.Println("Wrong answer")
+	default:
+		fmt.Println("Invalid option")
+		time.Sleep(time.Second)
+		Q7()
 	}
 }
 
