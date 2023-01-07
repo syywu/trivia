@@ -168,7 +168,7 @@ func Q8() {
 	case "a":
 		fmt.Println("Correct")
 		time.Sleep(time.Second)
-		// Q9()
+		Q9()
 	case "b":
 		fmt.Println("Wrong answer")
 	case "c":
@@ -181,6 +181,27 @@ func Q8() {
 		Q8()
 	}
 }
+
+func Q9() {
+	q, _ := Input(" Which fruit floats because 25% of its volume is air?\na-Orange\nb-Grapefruit\nc-Watermelon\nd-Apple\n", bufio.NewReader(os.Stdin))
+	switch q {
+	case "a":
+		fmt.Println("Wrong answer")
+	case "b":
+		fmt.Println("Wrong answer")
+	case "c":
+		fmt.Println("Wrong answer")
+	case "d":
+		fmt.Println("Correct")
+		time.Sleep(time.Second)
+		// Q10()
+	default:
+		fmt.Println("Invalid option")
+		time.Sleep(time.Second)
+		Q9()
+	}
+}
+
 func main() {
 	AskName()
 }
