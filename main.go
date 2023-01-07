@@ -16,11 +16,10 @@ func Input(s string, r *bufio.Reader) (string, error) {
 
 func AskName() {
 	name, _ := Input("What is your name?", bufio.NewReader(os.Stdin))
-	fmt.Println("Welcome to Trivia", name)
+	fmt.Println("Welcome to Trivia,", name)
+	Q1()
 }
 
-// Trivia Question: In a website browser address bar, what does “www” stand for?
-// Answer: World Wide Web
 func Q1() {
 	q, _ := Input("In a website browser address bar, what does “www” stand for?\na- Word Wide West\nb- World Wild Web\nc- World Wide Web\nd-World Wide Window\n", bufio.NewReader(os.Stdin))
 	switch q {
@@ -30,6 +29,7 @@ func Q1() {
 		fmt.Println("Wrong answer")
 	case "c":
 		fmt.Println("Correct")
+		Q2()
 	case "d":
 		fmt.Println("Wrong answer")
 	default:
@@ -38,7 +38,23 @@ func Q1() {
 	}
 }
 
+func Q2() {
+	q, _ := Input("In a bingo game, which number is represented by the phrase “two little ducks”?\na-22\nb-88\nc-55\nd-66\n", bufio.NewReader(os.Stdin))
+	switch q {
+	case "a":
+		fmt.Println("Correct")
+	case "b":
+		fmt.Println("Wrong answer")
+	case "c":
+		fmt.Println("Wrong answer")
+	case "d":
+		fmt.Println("Wrong answer")
+	default:
+		fmt.Println("Invalid option")
+		Q2()
+	}
+}
+
 func main() {
 	AskName()
-	Q1()
 }
