@@ -43,6 +43,7 @@ func Q2() {
 	switch q {
 	case "a":
 		fmt.Println("Correct")
+		Q3()
 	case "b":
 		fmt.Println("Wrong answer")
 	case "c":
@@ -52,6 +53,23 @@ func Q2() {
 	default:
 		fmt.Println("Invalid option")
 		Q2()
+	}
+}
+
+func Q3() {
+	q, _ := Input("According to Greek mythology, who was the first woman on earth?\na- Eve\nb- Athena\nc- Socrates\n d- Pandora\n", bufio.NewReader(os.Stdin))
+	switch q {
+	case "a":
+		fmt.Println("Wrong answer")
+	case "b":
+		fmt.Println("Wrong answer")
+	case "c":
+		fmt.Println("Wrong answer")
+	case "d":
+		fmt.Println("Correct")
+	default:
+		fmt.Println("Invalid option")
+		Q3()
 	}
 }
 
