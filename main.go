@@ -31,6 +31,7 @@ func Q1() {
 		fmt.Println("Wrong answer")
 	case "c":
 		fmt.Println("Correct")
+		time.Sleep(2 * time.Second)
 		Q2()
 	case "d":
 		fmt.Println("Wrong answer")
@@ -45,6 +46,7 @@ func Q2() {
 	switch q {
 	case "a":
 		fmt.Println("Correct")
+		time.Sleep(2 * time.Second)
 		Q3()
 	case "b":
 		fmt.Println("Wrong answer")
@@ -59,7 +61,7 @@ func Q2() {
 }
 
 func Q3() {
-	q, _ := Input("According to Greek mythology, who was the first woman on earth?\na- Eve\nb- Athena\nc- Socrates\n d- Pandora\n", bufio.NewReader(os.Stdin))
+	q, _ := Input("According to Greek mythology, who was the first woman on earth?\na- Eve\nb- Athena\nc- Socrates\nd- Pandora\n", bufio.NewReader(os.Stdin))
 	switch q {
 	case "a":
 		fmt.Println("Wrong answer")
