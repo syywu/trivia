@@ -122,11 +122,8 @@ func Q5() {
 	}
 }
 
-// Trivia Question:
-// Answer: Classical
-
 func Q6() {
-	q, _ := Input("What type of music has been shown to help plants grow better and faster?\na-Hip Hop\nDeep House\nClassical\nd-Lo-Fi\n", bufio.NewReader(os.Stdin))
+	q, _ := Input("What type of music has been shown to help plants grow better and faster?\na-Hip Hop\nb-Deep House\nc-Classical\nd-Lo-Fi\n", bufio.NewReader(os.Stdin))
 	switch q {
 	case "a":
 		fmt.Println("Wrong answer")
