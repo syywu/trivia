@@ -150,7 +150,7 @@ func Q7() {
 	case "b":
 		fmt.Println("Correct")
 		time.Sleep(time.Second)
-		// Q8()
+		Q8()
 	case "c":
 		fmt.Println("Wrong answer")
 	case "d":
@@ -162,6 +162,25 @@ func Q7() {
 	}
 }
 
+func Q8() {
+	q, _ := Input("What country has the world’s most ancient forest?\na-Australia\nb-Colombia\nc-Brazil\nd-Kenya\n", bufio.NewReader(os.Stdin))
+	switch q {
+	case "a":
+		fmt.Println("Correct")
+		time.Sleep(time.Second)
+		// Q9()
+	case "b":
+		fmt.Println("Wrong answer")
+	case "c":
+		fmt.Println("Wrong answer")
+	case "d":
+		fmt.Println("Wrong answer")
+	default:
+		fmt.Println("Invalid option")
+		time.Sleep(time.Second)
+		Q8()
+	}
+}
 func main() {
 	AskName()
 }
