@@ -83,7 +83,7 @@ func Q3() {
 }
 
 func Q4() {
-	q, _ := Input("Which bone are babies born without?\na-patella\nb-fibula\nc-clavicles\nd-tibia\n", bufio.NewReader(os.Stdin))
+	q, _ := Input("Which bone are babies born without?\na-Patella\nb-Fibula\nc-Clavicles\nd-Tibia\n", bufio.NewReader(os.Stdin))
 	switch q {
 	case "a":
 		fmt.Println("Correct")
@@ -103,7 +103,7 @@ func Q4() {
 }
 
 func Q5() {
-	q, _ := Input("How many hearts does an octopus have?\na-4\nb-3\nc-2\nd-8", bufio.NewReader(os.Stdin))
+	q, _ := Input("How many hearts does an octopus have?\na-4\nb-3\nc-2\nd-8\n", bufio.NewReader(os.Stdin))
 	switch q {
 	case "a":
 		fmt.Println("Wrong answer")
