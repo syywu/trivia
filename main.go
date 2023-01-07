@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 	"strings"
+	"time"
 )
 
 func Input(s string, r *bufio.Reader) (string, error) {
@@ -15,8 +16,9 @@ func Input(s string, r *bufio.Reader) (string, error) {
 }
 
 func AskName() {
-	name, _ := Input("What is your name?", bufio.NewReader(os.Stdin))
+	name, _ := Input("What is your name?\n", bufio.NewReader(os.Stdin))
 	fmt.Println("Welcome to Trivia,", name)
+	time.Sleep(2 * time.Second)
 	Q1()
 }
 
