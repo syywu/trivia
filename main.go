@@ -82,15 +82,13 @@ func Q3() {
 	}
 }
 
-// Trivia Question:
-// Answer: Knee cap
 func Q4() {
 	q, _ := Input("Which bone are babies born without?\na-patella\nb-fibula\nc-clavicles\nd-tibia\n", bufio.NewReader(os.Stdin))
 	switch q {
 	case "a":
 		fmt.Println("Correct")
 		time.Sleep(time.Second)
-		// Q5()
+		Q5()
 	case "b":
 		fmt.Println("Wrong answer")
 	case "c":
@@ -101,6 +99,26 @@ func Q4() {
 		fmt.Println("Invalid option")
 		time.Sleep(time.Second)
 		Q4()
+	}
+}
+
+func Q5() {
+	q, _ := Input("How many hearts does an octopus have?\na-4\nb-3\nc-2\nd-8", bufio.NewReader(os.Stdin))
+	switch q {
+	case "a":
+		fmt.Println("Wrong answer")
+	case "b":
+		fmt.Println("Correct")
+		time.Sleep(time.Second)
+		// Q6()
+	case "c":
+		fmt.Println("Wrong answer")
+	case "d":
+		fmt.Println("Wrong answer")
+	default:
+		fmt.Println("Invalid option")
+		time.Sleep(time.Second)
+		Q5()
 	}
 }
 
