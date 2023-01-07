@@ -207,13 +207,13 @@ func Q10() {
 	q, _ := Input("When did the Cold War end?\na-1990\nb-1980\nc-1989\nd-1985\n", bufio.NewReader(os.Stdin))
 	switch q {
 	case "a":
-		fmt.Println("Wrong answer")
-	case "b":
-		fmt.Println("Wrong answer")
-	case "c":
 		fmt.Println("Correct")
 		time.Sleep(time.Second)
 		fmt.Println("Congrats! You have one big brain :D")
+	case "b":
+		fmt.Println("Wrong answer")
+	case "c":
+		fmt.Println("Wrong answer")
 	case "d":
 		fmt.Println("Wrong answer")
 	default:
