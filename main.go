@@ -23,7 +23,7 @@ func AskName() {
 }
 
 func Q1() {
-	q, _ := Input("In a website browser address bar, what does “www” stand for?\na- Word Wide West\nb- World Wild Web\nc- World Wide Web\nd-World Wide Window\n", bufio.NewReader(os.Stdin))
+	q, _ := Input("In a website browser address bar, what does “www” stand for?\na-Word Wide West\nb-World Wild Web\nc-World Wide Web\nd-World Wide Window\n", bufio.NewReader(os.Stdin))
 	switch q {
 	case "a":
 		fmt.Println("Wrong answer")
@@ -61,7 +61,7 @@ func Q2() {
 }
 
 func Q3() {
-	q, _ := Input("According to Greek mythology, who was the first woman on earth?\na- Eve\nb- Athena\nc- Socrates\nd- Pandora\n", bufio.NewReader(os.Stdin))
+	q, _ := Input("According to Greek mythology, who was the first woman on earth?\na-Eve\nb-Athena\nc-Socrates\nd-Pandora\n", bufio.NewReader(os.Stdin))
 	switch q {
 	case "a":
 		fmt.Println("Wrong answer")
