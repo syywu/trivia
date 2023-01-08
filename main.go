@@ -23,7 +23,7 @@ func AskName() {
 }
 
 func Q1() {
-	q, _ := Input("In a website browser address bar, what does “www” stand for?\na-Word Wide West\nb-World Wild Web\nc-World Wide Web\nd-World Wide Window\n", bufio.NewReader(os.Stdin))
+	q, _ := Input("In a website browser address bar, what does “www” stand for?\na-World Wide West\nb-World Wild Web\nc-World Wide Web\nd-World Wide Window\n", bufio.NewReader(os.Stdin))
 	switch q {
 	case "a":
 		fmt.Println("Wrong answer")
@@ -183,7 +183,7 @@ func Q8() {
 }
 
 func Q9() {
-	q, _ := Input(" Which fruit floats because 25% of its volume is air?\na-Orange\nb-Grapefruit\nc-Watermelon\nd-Apple\n", bufio.NewReader(os.Stdin))
+	q, _ := Input("Which fruit floats because 25% of its volume is air?\na-Orange\nb-Grapefruit\nc-Watermelon\nd-Apple\n", bufio.NewReader(os.Stdin))
 	switch q {
 	case "a":
 		fmt.Println("Wrong answer")
